@@ -1,0 +1,1033 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body  {
+  --s: 100px; /* control the size*/
+  --c1: #d0367e;
+  --c2: #ffcdd5;
+  
+  --d: calc(var(--s)/10);  /* control the gap between stars */
+  
+  --_g: var(--c1) 36deg, #0000 0;   
+  background:
+    conic-gradient(from 162deg at calc(var(--s) * .5)  calc(var(--s) * .68), var(--_g)),
+    conic-gradient(from 18deg  at calc(var(--s) * .19) calc(var(--s) * .59), var(--_g)),
+    conic-gradient(from 306deg at calc(var(--s) * .81) calc(var(--s) * .59), var(--_g)),
+    var(--c2);
+  background-position: 0 calc(var(--s) * 0.35);
+  background-size: calc(var(--s) + var(--d)) calc(var(--s) + var(--d));
+}
+
+
+#contenedor {
+    width: 90vw;
+    height: 120vh;
+    background-color: #FFC9F6;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contenedor header {
+    background-color: #B856D1;
+    width: 90vw;
+    height: 15vh;
+    float: left;
+}
+#banner {
+    width: 90vw;
+    height: 10vh;
+    float: left;
+    background-image: url(../img/banner.png);
+    background-color: #FFF7D6;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center cent}
+#contenedor header nav {
+    width: 90vw;
+    height: 5vh;
+    float: left;
+    background-color: #A6034F;
+}
+header nav ul {
+    list-style-type: none;
+}
+#Inicio {
+    float: left;
+    background-color: #FFF7D6;
+    width: 30vw;
+    height: 5vh;
+    text-align: center;
+
+
+}
+#Inicio a  {
+    text-decoration: none;
+    line-height: 5vh;
+    color: #372B0B;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+#Inicio a:hover   {
+    text-decoration: none;
+    line-height: 5vh;
+    color: #CB2E81;
+    font-size: 25px;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+
+#Gemas {
+    width: 30vw;
+    height: 5vh;
+    background-color: #FFF7D6;
+    float: left;
+    text-align: center;
+}
+
+#Gemas a {
+    color: #372B0B;
+    line-height: 5vh;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+#Gemas a:hover   {
+    text-decoration: none;
+    line-height: 5vh;
+    color: #E3C651;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+#Fuciones {
+    height: 5vh;
+    width: 30vw;
+    float: left;
+    background-color: #FFF7D6;
+    text-align: center;
+}
+
+#Fuciones a {
+    color: #372B0B;
+    line-height: 5vh;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    float: none;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+#Fuciones a:hover   {
+    text-decoration: none;
+    line-height: 5vh;
+    color: #B596C6;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+#contenedor section {
+    width: 90vw;
+    height: 98vh;
+    display: block;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/imagenuno.png);
+}
+#conjunto1 {
+    width: 90vw;
+    height: 49vh;
+    float: left;
+}
+
+#ar1 {
+    width: 45vw;
+    height: 49vh;
+    float: left;
+	padding-top: 6.5vh;
+	padding-bottom: 10vh; 
+    padding-left: 4vw;
+	padding-right: 4vw;
+
+}
+.letragrande  {
+    font-size: 20vh;
+    color: #99D5D2;
+    text-align: right;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 7vw;
+}
+.letrapeque  {
+    font-size: 3vh;
+    color: #99D5D2;
+    text-align: right;
+    line-height: 2vw;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.letragrande2  {
+    font-size: 20vh;
+    color: #48BE6A;
+    text-align: left;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 7vw;
+}
+.letrapeque2  {
+    font-size: 3vh;
+    color: #48BE6A;
+    text-align: left;
+    line-height: 2vw;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.letragrande3  {
+    font-size: 19vh;
+    color: #B1131F;
+    text-align: left;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 7vw;
+}
+.letrapeque3  {
+    font-size: 3vh;
+    color: #B1131F;
+    line-height: 2vw;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+}
+.letragrande4  {
+    font-size: 19vh;
+    color: #645E8A;
+    text-align: left;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 7vw;
+}
+.letrapeque4  {
+    font-size: 3vh;
+    color: #645E8A;
+    text-align: left;
+    line-height: 2vw;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+#ar2 {
+    width: 45vw;
+    height: 49vh;
+    float: left;
+	padding-top: 6.5vh;
+	padding-bottom: 10vh; 
+    padding-left: 4vw;
+	padding-right: 4vw;
+}
+
+#conjunto2 {
+    width: 90vw;
+    height: 49vh;
+    float: left;
+}
+
+#ar3 {
+    width: 37.5vw;
+    height: 49vh;
+    float: left;
+    padding-top: 15vh;
+    padding-bottom: 10vh;
+    padding-left: 2vw;
+    padding-right: 8vw;
+}
+
+#ar4 {
+    width: 15vw;
+    height: 49vh;
+    float: left;
+    background-image: url(../img/logorosa.png);
+    background-position: center 32vh;
+    background-size: 150px auto;
+    background-repeat: no-repeat;
+    padding-top: 20vh;
+    padding-right: 8vw;
+    padding-left: 2vw;
+}
+#ar5 {
+    width: 37.5vw;
+    height: 49vh;
+    float: left;
+    padding-top: 15vh;
+    padding-bottom: 10vh;
+    padding-left: 6vw;
+    padding-right: 4vw;
+}
+
+#contenedor footer {
+    height: 7vh;
+    width: 90vw;
+    background-color: #d0367e;
+    float: left;
+}
+#contenedorg {
+    width: 90vw;
+    height: 160vh;
+    background-color: #F1A8E3;
+    margin-left: auto;
+    margin-right: auto;
+}
+#headerg {
+	
+	 background-color: #B856D1;
+    width: 90vw;
+    height: 6vh;
+    float: left;
+}
+#bannerg {
+    width: 90vw;
+    height: 1vh;
+    float: left;
+    background-color: #FEFBFD;
+}
+#navg {
+	
+	width: 90vw;
+    height: 5vh;
+    float: left;
+    background-color: #A6034F;
+}
+#Iniciog {
+    float: left;
+    background-color: #fefbfd;
+    width: 30vw;
+    height: 5vh;
+    text-align: center;
+}
+
+#Iniciog a  {
+    text-decoration: none;
+    line-height: 5vh;
+    color: #372B0B;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: undefined;
+}
+#Iniciog a:hover   {
+    text-decoration: none;
+    line-height: 5vh;
+    color: #CB2E81;
+    font-size: 25px;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+#Gemasg {
+    width: 30vw;
+    height: 5vh;
+    background-color: #ffffff;
+    float: left;
+    text-align: center;
+}
+
+#Gemasg a {
+    color: #372B0B;
+    line-height: 5vh;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+#Gemasg a:hover   {
+    text-decoration: none;
+    line-height: 5vh;
+    color: #E3C651;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#Fucionesg {
+    height: 5vh;
+    width: 30vw;
+    float: left;
+    background-color: #ffffff;
+    text-align: center;	
+}
+
+#Fucionesg a {
+    color: #372B0B;
+    line-height: 5vh;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    float: none;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+#Fucionesg a:hover   {
+    text-decoration: none;
+    line-height: 5vh;
+    color: #B596C6;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+#contenedorg .sectiong {
+    width: 90vw;
+    height: 147vh;
+    background-image: url(../img/fondo2.png);
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: block;
+}
+#con1g {
+    width: 90vw;
+    height: 25vh;
+    float: left;
+}
+#arg1 {
+    width: 30vw;
+    height: 20vh;
+    background-image: url(../img/p.png);
+    background-position: center center;
+    background-size: 190px auto;
+    background-repeat: no-repeat;
+    float: left;
+    padding-top: 25vh;
+}
+
+#arg2 .histoariag {
+    font-size: 16px;
+    color: #c6b3ff;
+    text-align: center;
+    line-height: 20px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    padding-top: 3vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    width: 30vw;
+    height: 20vh;
+    float: left;
+}
+
+#arg3 {
+    width: 30vw;
+    height: 20vh;
+    float: left;
+    background-image: url(../img/A.png);
+    background-position: center center;
+    background-size: 120px auto;
+    background-repeat: no-repeat;
+    padding-top: 25vh;
+}
+#con2g {
+    width: 90vw;
+    height: 60vh;
+    float: left;
+}
+#arg4 {
+    width: 54vw;
+    height: 60vh;
+    float: left;
+    background-image: url(../img/df.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imagencontexto {
+    position: relative;
+    display: inline-block;
+}
+.imagencontexto img {
+    height: auto;
+    width: 16vw;
+}
+.texto.encima {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: goldenrod;
+    background-color: rgba(43,22,4,0.6);
+	padding: 10px;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.imagencontexto:hover .texto.encima{
+
+	opacity: 1;
+}
+
+#arg5 {
+    width: 36vw;
+    height: 60vh;
+    float: left;
+    background-image: url(url);
+}
+.Homeworld  {
+    font-size: 13vh;
+    color: #c6b3ff;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 6vw;
+    float: left;
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+    padding-left: 4vw;
+    padding-right: 5px;
+}
+
+.gems {
+    font-size: 25px;
+    color: #261A0C;
+    text-align: left;
+    line-height: 25px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    float: left;
+    padding-right: 1vw;
+    padding-left: 3vw;
+}
+
+
+
+
+#con3g {
+    width: 90vw;
+    height: 62vh;
+    float: left;
+}
+#arg6 {
+    height: 62vh;
+    width: 45vw;
+    float: left;
+}
+#arg7 {
+    width: 45vw;
+    float: left;
+    background-image: url(../img/gemasoriginales.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 62vh;
+}
+
+
+
+
+#contenedorg .footerg {
+    width: 90vw;
+    height: 7vh;
+    float: left;
+    background-color: #d0367e;
+}
+#contenedorf {
+    width: 90vw;
+    height: 160vh;
+    background-color: #F1A8E3;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#headerf {
+	
+	 background-color: #B856D1;
+    width: 90vw;
+    height: 6vh;
+    float: left;
+}
+#bannerf {
+    width: 90vw;
+    height: 1vh;
+    float: left;
+    background-color: #ffcdd5;
+}
+#navf {
+	
+	width: 90vw;
+    height: 5vh;
+    float: left;
+    background-color: #ffcdd5;
+}
+
+#Iniciof {
+    float: left;
+    background-color: #ffcdd5;
+    width: 30vw;
+    height: 5vh;
+    text-align: center;
+}
+
+#Iniciof a  {
+    text-decoration: none;
+    line-height: 5vh;
+    color: #372B0B;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: undefined;
+}
+#Iniciof a:hover   {
+    text-decoration: none;
+    line-height: 5vh;
+    color: #CB2E81;
+    font-size: 25px;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+#Gemasf {
+    width: 30vw;
+    height: 5vh;
+    background-color: #ffcdd5;
+    float: left;
+    text-align: center;
+}
+
+#Gemasf a {
+    color: #372B0B;
+    line-height: 5vh;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+#Gemasf a:hover   {
+    text-decoration: none;
+    line-height: 5vh;
+    color: #E3C651;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#Fucionesf {
+    height: 5vh;
+    width: 30vw;
+    float: left;
+    background-color: #ffcdd5;
+    text-align: center;	
+}
+
+#Fucionesf a {
+    color: #372B0B;
+    line-height: 5vh;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    float: none;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+#Fucionesf a:hover   {
+	
+    text-decoration: none;
+    line-height: 5vh;
+    color: #B596C6;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#contenedorf .secctionf {
+    width: 90vw;
+    height: 147vh;
+    display: block;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/fonfof.png);	
+}
+#conj1f {
+    width: 90vw;
+    height: 49vh;
+    float: left;
+	background-color: rgba(255,205,213,0.7);    
+	border-radius: 50px;
+}
+#arcon5 {
+    width: 22.5vw;
+    height: 49vh;
+    float: left;
+    background-position: center center;
+    background-size: 43vh auto;
+    background-repeat: no-repeat;
+}
+.textofusion5 {
+    font-size: 10vh;
+    color: #d0367e;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 4vw;
+    float: left;
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+    padding-left: 3vw;
+    padding-right: 4px;
+}
+.textofusionpeque5 {
+    font-size: 20px;
+    color: #3F1126;
+    text-align: left;
+    line-height: 20px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    float: left;
+    padding-right: 1vw;
+    padding-left: 3vw;
+}
+
+
+#arcon6 {
+    width: 22.5vw;
+    height: 49vh;
+    float: left;
+    background-image: url(../img/Obsidian.png);
+    background-position: center center;
+    background-size: 59vh auto;
+    background-repeat: no-repeat;
+    margin-top: 6.5vh;
+}
+.textofusion6 {
+    font-size: 60px;
+    color: #110802;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 40px;
+    float: left;
+    text-align: left;
+    padding-left: 1vw;
+}
+#arcon7 
+{
+    width: 22.5vw;
+    height: 49vh;
+    float: left;
+    background-image: url(../img/garnet.png);
+    background-position: center center;
+    background-size: 49vh auto;
+    background-repeat: no-repeat;
+}
+.textofusion7 {
+    font-size: 60px;
+    color: #950040;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 40px;
+    float: left;
+    padding-top: 6vh;
+    text-align: left;
+    padding-left: 1vw;
+}
+
+#arcon8 {
+    width: 22.5vw;
+    height: 49vh;
+    float: left;
+    background-image: url(../img/este%20boni.png);
+    background-position: center center;
+    background-size: 50vh auto;
+    background-repeat: no-repeat;
+    margin-top: 2vh;
+}
+.textofusion8 {
+    font-size: 60px;
+    color: #FE7373;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 40px;
+    float: left;
+    padding-top: 4vh;
+    text-align: left;
+    padding-left: 1vw;
+}
+
+#conj2f {
+    width: 90vw;
+    height: 49vh;
+    float: left;
+}
+#arf1 {
+    width: 35vw;
+    height: 49vh;
+    float: left;
+    background-color: rgba(255,205,213,0.7);
+    border-radius: 50px;   
+}
+#arf1 video {
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    background-size: cover;
+    width: 30vw;
+    height: 43vh;
+    float: left;
+    margin-left: 2.5vw;
+    margin-top: 2vh;
+}
+#arf2 {
+    width: 35vw;
+    height: 49vh;
+    float: left;
+    background-color: rgba(255,205,213,0.7);    
+	border-radius: 50px;
+}
+#arf2 video {
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    background-size: cover;
+    width: 30vw;
+    height: 43vh;
+    float: left;
+    margin-left: 2.5vw;
+	margin-top: 2vh;
+}
+
+#arf3 {
+    width: 20vw;
+    height: 49vh;
+    float: left;
+    padding-top: 22vh;
+    background-image: url(../img/es.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 3vw;
+    padding-right: 3vw;
+	}
+.letragrandef  {
+    font-size: 18px;
+    color: #59192f;
+    font-family: "Nerko One", cursive;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 35px;
+    text-align: center;
+}
+
+
+
+
+#conj3f {
+    width: 90vw;
+    height: 49vh;
+    float: left;
+    padding-top: 0px;
+    text-align: left;
+	 background-color: rgba(255,205,213,0.7);
+    border-radius: 50px;  
+}
+#arcon1 {
+    width: 22.5vw;
+    height: 49vh;
+    float: left;
+    background-image: url(../img/Sugalite.png);
+    background-position: center center;
+    background-size: 43vh auto;
+    background-repeat: no-repeat;
+    padding-bottom: 30vh;
+}
+.textofusion1 {
+    font-size: 60px;
+    color: #813CAB;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 40px;
+    float: left;
+    padding-top: 6vh;
+    text-align: left;
+    padding-left: 1vw;	
+}
+#arcon2 {
+    width: 22.5vw;
+    height: 49vh;
+    float: left;
+    background-image: url(../img/Bluebird.png);
+    background-position: center center;
+    background-size: 49vh auto;
+    background-repeat: no-repeat;
+    padding-bottom: 30vh;
+    padding-left: 0px;
+}
+.textofusion2 {
+    font-size: 60px;
+    color: #032479;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 40px;
+    float: left;
+    padding-top: 6vh;
+    text-align: left;
+    padding-left: 1vw;	
+	
+}
+#arcon3 {
+    width: 22.5vw;
+    height: 49vh;
+    float: left;
+    background-position: center 0vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 30vh;
+    background-image: url(../img/Malachite.png);
+}
+.textofusion3 {
+    font-size: 60px;
+    color: #024136;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 40px;
+    float: left;
+    padding-top: 6vh;
+    text-align: left;
+    padding-left: 1vw;	
+	
+}
+
+#arcon4 {
+    width: 22.5vw;
+    height: 49vh;
+    float: left;
+}
+.textofusion4 {
+    font-size: 10vh;
+    color: #AA1E5F;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 4vw;
+    float: left;
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+    padding-left: 7vw;
+}
+
+    
+.textofusionpeque4 {
+    font-size: 20px;
+    color: #3F1126;
+    text-align: right;
+    line-height: 20px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    float: left;
+    padding-right: 3vw;
+    padding-left: 1vw;
+}
+
+
+
+
+
+#footerf {
+    height: 7vh;
+    width: 90vw;
+    float: left;
+    background-color: #D0367E;
+}
+#footer1 {
+    width: 45vw;
+    height: 7vh;
+    float: left;
+    background-image: url(../img/hbologo.png);
+    background-position: center center;
+    background-size: 7vw auto;
+    background-repeat: no-repeat;
+    background-color: #D0367E;
+}
+#footer2 {
+    width: 45vw;
+    height: 7vh;
+    background-image: url(../img/ig-logoinsta.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 15vh auto;
+    float: left;
+    background-color: #D0367E;
+}
